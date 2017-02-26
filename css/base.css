@@ -1,0 +1,28 @@
+body,
+ul,
+dl,
+dd,
+p,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;
+  font-size: 14px;
+  color: #333;
+}
+.pull-right {
+  transform: translate(200px, 0);
+}

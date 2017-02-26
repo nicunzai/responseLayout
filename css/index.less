@@ -1,0 +1,146 @@
+@import url('./base.less');
+
+/* 顶端头部===================begin */
+
+// 隐藏的左侧内容============begin
+	.all{
+		overflow: hidden;
+	}
+	.left{
+		position: absolute;
+		left: -200px;
+		width: 200px;
+		height: 1200px;
+		background-color: green;
+		transition:all 0.3s ease-in;
+		
+	}
+// 隐藏的左侧内容============end
+	// 右侧内容==============begin
+
+	.right{
+		transition:all .3s ease-in;
+	}
+	// 右侧内容==============end
+.header{
+	border-bottom: 1px solid #ccc;
+	ul{
+		width: 970px;
+		height: 50px;
+		margin: 0 auto;
+		
+		li{
+			
+			line-height: 50px;
+			text-align: center;
+			float: left;
+			border-right: 1px solid #ccc;
+		}
+		.p-wjs{
+			width: 220px;
+		}
+		.serve{
+			width: 330px;
+		}
+		.problem{
+			width: 180px;
+		}
+		.login{
+			width: 235px;
+			border-right: none;
+		}
+	}
+
+}
+/* 顶端头部===================end */
+// 侧导航===============begin
+.menu{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+	display: none;
+	a{
+		display: inline-block;
+		line-height: 50px;
+		// width: 50px;
+		font-size: 20px;
+	}
+	.other-nav{
+		
+		padding-left: 50px;
+		
+		background: url('../images/menu.png') no-repeat 25% 50%;
+	}
+	.other-center{
+		float: right;
+		padding-right: 30px;
+	}
+}
+
+// 侧导航===============end
+//导航==========================开始
+.nav{
+	border-bottom: 1px solid #ccc;
+	ul{
+		width: 970px;
+		height: 50px;
+		margin: 0 auto;
+		li{
+			float: left;
+			a{
+				display: inline-block;
+				padding: 0 20px;
+				line-height: 50px;
+				font-size: 18px;
+			}
+		}
+		.logo{
+			img{
+				width: 139px;
+				height: 33px;
+			}
+		}
+	}
+}
+
+//导航==========================结束
+// 轮播图================begin
+
+
+// 轮播图================end
+
+
+// 响应式条件查询==================begin
+@media (max-width:979px){
+	.header{
+		ul{
+			width: 750px;
+			.p-wjs{
+				display: none;
+			}
+		}
+
+	}
+	// nav导航栏
+	.nav{
+		ul{
+			width: 750px;
+			.wlt{
+				display: none;
+			}
+		}
+	
+	}
+}
+
+@media(max-width:767px) {
+	.header,.nav{
+		display: none;
+	}
+
+	// 侧导航
+	.menu{
+		display: block;
+	}
+}
+// 响应式条件查询==================end

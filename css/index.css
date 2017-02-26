@@ -1,0 +1,134 @@
+body,
+ul,
+dl,
+dd,
+p,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;
+  font-size: 14px;
+  color: #333;
+}
+.pull-right {
+  transform: translate(200px, 0);
+}
+/* 顶端头部===================begin */
+.all {
+  overflow: hidden;
+}
+.left {
+  position: absolute;
+  left: -200px;
+  width: 200px;
+  height: 1200px;
+  background-color: green;
+  transition: all 0.3s ease-in;
+}
+.right {
+  transition: all 0.3s ease-in;
+}
+.header {
+  border-bottom: 1px solid #ccc;
+}
+.header ul {
+  width: 970px;
+  height: 50px;
+  margin: 0 auto;
+}
+.header ul li {
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  border-right: 1px solid #ccc;
+}
+.header ul .p-wjs {
+  width: 220px;
+}
+.header ul .serve {
+  width: 330px;
+}
+.header ul .problem {
+  width: 180px;
+}
+.header ul .login {
+  width: 235px;
+  border-right: none;
+}
+/* 顶端头部===================end */
+.menu {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  display: none;
+}
+.menu a {
+  display: inline-block;
+  line-height: 50px;
+  font-size: 20px;
+}
+.menu .other-nav {
+  padding-left: 50px;
+  background: url('../images/menu.png') no-repeat 25% 50%;
+}
+.menu .other-center {
+  float: right;
+  padding-right: 30px;
+}
+.nav {
+  border-bottom: 1px solid #ccc;
+}
+.nav ul {
+  width: 970px;
+  height: 50px;
+  margin: 0 auto;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 50px;
+  font-size: 18px;
+}
+.nav ul .logo img {
+  width: 139px;
+  height: 33px;
+}
+@media (max-width: 979px) {
+  .header ul {
+    width: 750px;
+  }
+  .header ul .p-wjs {
+    display: none;
+  }
+  .nav ul {
+    width: 750px;
+  }
+  .nav ul .wlt {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .header,
+  .nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
