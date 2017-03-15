@@ -1,7 +1,8 @@
 
-body, ul, dl, dd, p, h4 {
+body, ul, dl, dd, p, h4,h1,h2,h3,h5,h6 {
 	padding: 0;
 	margin: 0;
+	font-family: "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;
 }
 
 ul {
@@ -28,5 +29,18 @@ body {
 
 
 .pull-right{
-	transform:translate(200px,0);
+	transform:translate(240px,0);
 }
+
+.clearfix:after,.clearfix:before{
+	content:'';
+	height: 0;
+	line-height: 0;
+	display: table;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	zoom:1;
+}
+

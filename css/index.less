@@ -1,18 +1,122 @@
 @import url('./base.less');
 
-/* 顶端头部===================begin */
-
-// 隐藏的左侧内容============begin
 	.all{
-		overflow: hidden;
+		overflow-x: hidden;
+		height: 100%;
 	}
+	/*阴影层==================begin*/
+	  		.mask{
+	  			width: 100%;
+	  			height: 100%;
+	  			position: fixed;
+	  			top: 0;
+	  			left: 0;
+	  			background-color: rgba(0,0,0,0.4);	  			
+	  			z-index: 100;
+	  			display: none;
+	  			// 登录界面==========================begin
+				.login-div{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 512px;
+						height: 280px;
+						background-color: #fff;
+						border: 1px solid #ebebeb;
+						margin-top: -140px;
+						margin-left: -256px;
+						box-shadow: 0px 0px 50px #ddd;
+						
+						h5{
+							text-align: center;
+							padding-top: 20px;
+							padding-bottom: 40px;
+							font-size: 18px;
+							cursor: move;
+						}
+						div{
+							margin-bottom: 20px;
+							label{
+								margin-left: 20px;
+								font-size: 15px;
+							}
+							input{
+								width: 350px;
+								height: 35px;
+								margin-left: 20px;
+								text-indent: 8px;
+								font-size: 14px;
+								border: #ccc 1px solid;
+							}
+						}
+						.username{
+							label{
+								margin-left: 35px;
+							}
+						}
+						.signIn{
+							display:block;
+							margin: 10px auto;
+							border: #ccc 1px solid;
+							width: 50%;
+							height: 40px;
+							background-color: #fff;
+							text-align: center;
+							line-height: 40px;
+							text-decoration: none;
+							color: #000;
+
+						}
+						.close{
+							width: 19px;
+							height: 19px;
+							text-align: center;
+							line-height: 19px;
+							background-color: #fff;
+							border: 1px solid #ccc;
+							border-radius: 19px;
+							position: absolute;
+							top: -5px;
+							right:  -5px;
+							font-family: Vrinda;
+						}
+					}
+				
+				// 登录界面==========================end
+	  			
+	  		}  
+		// 阴影层==================end
+	
+	// 隐藏的左侧内容============begin
 	.left{
 		position: absolute;
-		left: -200px;
-		width: 200px;
-		height: 1200px;
-		background-color: green;
+		left: -240px;
+		width: 240px;
+		height: 1358px;
+		background:url(../images/info_left_bg.jpg);
 		transition:all 0.3s ease-in;
+		padding: 20px 30px;
+		box-sizing: border-box;
+		color: #D2D2D2;
+		h4{
+			font-size: 16px;
+		}
+		dl{
+			padding: 20px;
+			font-size: 16px;
+			a{
+				color: #D2D2D2;
+				padding: 10px;
+			}
+			.line{
+				width: 240px;
+				height: 1px;			
+				background-color: #ccc;	
+				margin: 10px 0;
+				margin-left: -50px;
+				opacity: 0.3;
+			}
+		}
 		
 	}
 // 隐藏的左侧内容============end
@@ -22,6 +126,7 @@
 		transition:all .3s ease-in;
 	}
 	// 右侧内容==============end
+	/* 顶端头部===================begin */
 .header{
 	border-bottom: 1px solid #ccc;
 	ul{
@@ -48,6 +153,17 @@
 		.login{
 			width: 235px;
 			border-right: none;
+			a:nth-child(1){
+				width: 66px;
+				height: 22px;
+				line-height: 1.5;
+				background-color: #e61e25;
+				color: #fff;
+				border-radius: 3px;
+				padding: 3px;
+				margin-right: 10px;
+
+			}
 		}
 	}
 
@@ -94,11 +210,18 @@
 				font-size: 18px;
 			}
 		}
+		li:hover{
+			background-color: rgba(0,0,0,0.05);
+		}
+		
 		.logo{
 			img{
 				width: 139px;
 				height: 33px;
 			}
+		}
+		.logo:hover{
+			background-color: #fff;
 		}
 	}
 }
@@ -106,12 +229,313 @@
 //导航==========================结束
 // 轮播图================begin
 
-
 // 轮播图================end
+// 投资门槛低======================begin
+.invest-sill{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 24px 0;
+	display: flex;
+	p{
+		font-size: 18px;
+		margin-left: -20px;
+		font-weight: 500;
+	}
+	div{
+		flex:1;
+		margin-left: 40px;
+		li{
+			list-style-type: circle;
+			margin: 10px 0;
+		}
+
+	}
+}
+// 投资门槛低======================end
+// 新标预告==================begin
+.newBid{
+	
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.newBid-inside{
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+	p{
+		margin: 20px;
+		a:nth-last-child(2){
+			color:#428bca;
+			margin: 0 20px;
+		}
+		a:last-child{
+			border-bottom: 1px dashed #efb513;
+		}
+
+	}
+	span{
+		color: #efb513;
+	}
+}
+.three-video{
+	width: 110px;
+	height: 34px;
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	margin-top: -17px;
+	background: url(../images/help-mv.png) no-repeat;
+	background-size: contain;
+}
+ // 新标预告==================end 
+// 特别推荐===================begin
+.especially-recommend{
+	background:url(../images/box-style-bg.png);
+	
+	.micro-financing{
+		ul{	
+			max-width: 1170px;
+			border-bottom: 1px solid #ccc;
+			margin: 0 auto;
+			li:first-child{
+				border-bottom: 3px solid #e61e25;
+			}
+		}
+		
+		
+		li{
+			float: left;
+			height: 60px;
+			line-height: 60px;
+			padding: 0 20px;
+			margin-right: 10px;
+			border-bottom: 3px solid transparent;
+		}
+		a{
+			font-size: 15px;
+			color: #333;
+
+		}
+		li:hover{
+			border-bottom: 3px solid #e61e25;
+		}
+	}
+	.especially-whiteBar{
+		max-width: 1170px;
+		margin: 15px auto;
+		padding: 10px;
+		border-radius: 3px;
+		background-color: #fff;
+		position: relative;
+		span{
+			width: 0;
+			height: 0;
+			border: 8px solid transparent;
+			border-bottom: 10px solid #e61e25;
+			position: absolute;
+			top: -18px;
+			left: 50px;
+		}
+	}
+	// 微收益===========================begin
+	.micro-incomeul{
+		max-width: 1170px;
+		margin: 0 auto;
+		text-align: justify;
+
+		li{
+			display: inline-block;
+			width: 31.5%;
+			height: 148px;
+			background-color: #fff;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			box-shadow: 2px 2px 2px #d8d8d8;
+		}
+		.last-li{
+			width: 31.5%;
+			height: 0;
+			display: inline-block;
+		}
+		.incomeul-left{
+			position: relative;
+			width: 70%;
+			box-sizing: border-box;
+			border-right: 1px dashed #ccc;
+			height: 100%;
+			padding: 20px;
+			float: left;
+			img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 28px;
+				height: 26px;
+
+			}
+			dt{
+				font-size: 15px;
+				 color: #2c3e50;
+				 font-weight: 700;
+			}
+			dd{
+				margin-top: 5px;
+			}
+			.title{
+				font-size: 12px;
+				color: #9ea7b3;
+				span:nth-child(2){
+					float: right;
+				}
+			}
+			.count{
+				font-size: 18px;
+				/* color: #fff; */
+				font-weight: 500px;
+				span:nth-child(2){
+					float: right;
+				}
+			}
+
+		}
+		/*伪元素添加半圆*/
+		.incomeul-left:before,.incomeul-left:after{
+			content: '';
+			width: 0;
+			height: 0;
+			border: 6px solid #EFEFEF;
+			border-radius: 6px;
+			
+		}
+		.incomeul-left:before{
+			position: absolute;
+			top: -6px;
+			right: -6px;
+		}
+		.incomeul-left:after{
+			position: absolute;
+			right: -6px;
+			bottom: -6px;
+		}
+		.incomeul-right{
+			width: 30%;
+			box-sizing: border-box;
+			float: right;
+			height: 100%;
+			p{
+				text-align: center;
+				margin-top: 20px;
+				height: 40px;
+				span{
+					display: inline-block;
+					width: 18px;
+					height: 18px;
+					border: 1px solid #ccc;
+
+				}
+				span:nth-child(1){
+					color: #399;
+					border-color: #399;
+				}
+				span:nth-child(2){
+					color: #f56854;
+					border-color: #f56854;
+				}
+				
+			}
+			h3{
+				text-align: center;
+				line-height: 1;
+				color: #e61e25;
+				font-size: 30px;
+				font-weight: 700px;	
+				small{
+					font-size: 14px;
+				}
+			}
+			.h3-bottom{
+				margin-top: 5px;
+				text-align: center;
+				b{
+					display: block;
+				}
+				span{
+					display: block;
+					font-size: 10px;
+				}
+			}
+		}
+		.first-li{
+			background-color: #e61e25;
+				color: #fff;
+			dt,h3{
+				color: #fff;
+			}
+			.title{
+				color: #FFF;
+				opacity: 0.5;
+			}
+		}
+		.lastli-bgc{
+			background:url('../images/loan-status-5.png') no-repeat;
+			background-size: 100px 100px;
+			background-position: center center ;
+			background-color: #E6E6E6;
+		}
+	}
+	.micro-incomeul:after{
+			content:" ";
+			display: inline-block;
+			width: 100%;
+			height: 0;
+
+	}
+	/*微收益===========================end*/
+	
+}
+// 页面底部版权==============================begin
+	.copyright{
+		width: 100%;
+		/* height: 50px; */
+		background-color: #333;
+		p{
+			padding: 20px 0;
+			text-align: center;
+			color: #fff;
+		}
+		.div-imges{
+			width: 100%;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 40px;
+			img{
+				width: auto;
+				height: 42px;
+				margin: 0 10px;
+				/* display: inline-block; */
+			}
+		}
+	}
+
+// 页面底部版权==============================end
 
 
+// 特别推荐===================end
 // 响应式条件查询==================begin
 @media (max-width:979px){
+	// 特别推荐====begin
+	.especially-recommend{
+		.micro-financing>ul{
+			width: 750px;
+			margin: 0 auto;
+		}
+		.especially-whiteBar{
+			 max-width: 750px;
+			margin: 15px auto;
+		}
+	}
+	
+	// 特别推荐====end
 	.header{
 		ul{
 			width: 750px;
@@ -121,26 +545,74 @@
 		}
 
 	}
+	//投资门槛低
+	.invest-sill{
+		max-width: 750px;
+	}
 	// nav导航栏
 	.nav{
 		ul{
-			width: 750px;
+			max-width: 750px;
 			.wlt{
 				display: none;
 			}
 		}
 	
 	}
+	// 新标预告
+	.three-video{
+		display: none;
+	}
+	.newBid-inside{
+		max-width: 750px;
+		margin: 0 auto;
+	}
+	// 微收益==========begin
+	.micro-income{
+		.micro-incomeul{
+			width: 750px;
+			li{
+				width: 49%;
+			}
+		}
+	}
+	// 微收益==========end
+
+
+
+
+	
 }
 
 @media(max-width:767px) {
-	.header,.nav{
+	// 特别推荐=====begin
+	.micro-financing{
+		overflow: auto;
+	}
+	// 特别推荐=====end
+	.header,.nav,.invest-sill{
 		display: none;
 	}
 
-	// 侧导航
+	// 侧导航,投资门槛低
 	.menu{
 		display: block;
 	}
+
+	// 微收益==========begin
+	.micro-income{
+		.micro-incomeul{
+			width: 100%;
+			li{
+				width: 100%;
+			}
+		}
+	}
+	// 微收益==========end
+	// 页面底部版权==========begin
+	.copyright{
+		display: none;
+	}
+	// 页面底部版权==========end
 }
 // 响应式条件查询==================end

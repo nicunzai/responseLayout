@@ -6,6 +6,7 @@ p,
 h4 {
   padding: 0;
   margin: 0;
+  font-family: "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;
 }
 ul {
   list-style: none;
@@ -24,5 +25,17 @@ body {
   color: #333;
 }
 .pull-right {
-  transform: translate(200px, 0);
+  transform: translate(240px, 0);
+}
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  height: 0;
+  line-height: 0;
+  display: table;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
 }
